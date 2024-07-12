@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HandTerm - The Handex Terminal</title>
-  <script type="module" crossorigin src="/assets/index-CqOhQ44q.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CB7NnaBc.css">
+  <script type="module" crossorigin src="/assets/index-CNtCsrQj.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CFXG3Nfi.css">
 </head>
-
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" id="terminal-nav-svg" style="display: none"
     hidden="hidden">
@@ -25,11 +23,14 @@
     </defs>
   </svg>
   <div id="root"></div>
+  <div id="footer">
+    <div id="footer-text">PRE-ORDER YOUR HANDEX TODAY!<br />at handex.io</div>
+    <img src="/images/PricingQR_w200.png" alt="Handex.io/pricing QR code" />
+  </div>
 </body>
 <script>
   document.addEventListener('DOMContentLoaded', (event) => {
     const rootElement = document.getElementById('root');
-
     document.body.addEventListener('click', (e) => {
       // Check if the click is outside of the terminal area
       if (e.target === rootElement || rootElement.contains(e.target)) {
@@ -40,5 +41,4 @@
     });
   });
 </script>
-
 </html>
